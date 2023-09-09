@@ -25,6 +25,19 @@ const CountryList = () => {
   const predefinedColors = ['blue', 'red', 'green', 'purple', 'orange'];
   const [currentColor, setCurrentColor] = useState (predefinedColors[0]);
 
+  useEffect (
+  () => {
+    if (!loading && data && data.countries.length > 0) {
+      const initialSelectedCountry = data.countries.length > 10
+        ? data.countries[9].name 
+        : data.countries[data.countries.length - 1].name;
+      setSelectedCountry (initialSelectedCountry);
+    }
+  },
+  [loading, data]
+);
+
+
   const parseInput = input => {
     const keywords = input.split (' ');
     
