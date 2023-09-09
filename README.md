@@ -1,4 +1,4 @@
-This demo was made for the Junior Frontend Developer assignment at DataGuess. 7 of the 8 requirements of the assignment were fulfilled. The requirement "When products are filtered, the 10th country should be selected if available, otherwise the last country should be selected" could not be completed. Other than that, all requirements were fulfilled.
+This demo was made for the Junior Frontend Developer assignment at DataGuess. 7 of the 8 requirements of the assignment were fulfilled. The requirement "When products are filtered, the 10th country should be selected if available, otherwise the last country should be selected" could not be completed. Other than that, all requirements were fulfilled. But the demo was written in JavaScript, TypeScript was not used.
 
 ## Available Scripts
 
