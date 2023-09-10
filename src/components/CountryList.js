@@ -1,5 +1,6 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import {useQuery, gql} from '@apollo/client';
+import '../assets/css/CountryList.css'
 
 const GET_COUNTRIES = gql`
   query {
@@ -51,6 +52,7 @@ const CountryList = () => {
 
     const searchTerm = searchKeyword ? searchKeyword.slice (7) : '';
     const newGroupBy = groupKeyword ? groupKeyword.slice (6) : groupBy;
+
     setGroupBy (newGroupBy);
 
     return searchTerm;
