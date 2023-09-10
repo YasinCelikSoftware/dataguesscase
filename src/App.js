@@ -1,5 +1,4 @@
-import './App.css';
-import CountryList from './CountryList';
+import CountryList from './components/CountryList';
 
 function App () {
   return (
